@@ -1,8 +1,8 @@
 class Mojify < Formula
   desc "Terminal-first video player that renders media as colored character frames"
   homepage "https://github.com/jassuwu/mojify"
-  url "https://github.com/jassuwu/mojify/archive/refs/tags/v2026.06.02.0.tar.gz"
-  sha256 "edff5e2c85322107391530ce5659fd1157aed6bd0b4e3b2b4bccc55198f33441"
+  url "https://github.com/jassuwu/mojify/archive/refs/tags/v2026.06.04.0.tar.gz"
+  sha256 "6780df3559e60d3f9596f640daf0ebcd73fbec7a2c1fc9a653e9fe54586d110f"
   license "MIT"
 
   head "https://github.com/jassuwu/mojify.git", branch: "main"
