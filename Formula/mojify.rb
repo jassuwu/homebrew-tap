@@ -1,18 +1,18 @@
 class Mojify < Formula
   desc "Terminal-first video player that renders media as colored character frames"
   homepage "https://github.com/jassuwu/mojify"
-  url "https://github.com/jassuwu/mojify/archive/refs/tags/v2026.06.04.8.tar.gz"
-  sha256 "c31636b5e0c75b377bab2327957ee34929a613d9310984b90aaa2e65b3c60945"
+  url "https://github.com/jassuwu/mojify/archive/refs/tags/v2026.06.05.0.tar.gz"
+  sha256 "785d9aec0e8edcdcf437fc45ad95114618cca8387eaf9370f6cc0dd22a32fc46"
   license "MIT"
 
   head "https://github.com/jassuwu/mojify.git", branch: "main"
 
   bottle do
-    root_url "https://github.com/jassuwu/homebrew-tap/releases/download/mojify-2026.06.04.8"
+    root_url "https://github.com/jassuwu/homebrew-tap/releases/download/mojify-2026.06.05.0"
     rebuild 1
-    sha256 cellar: :any_skip_relocation, arm64_tahoe:  "12e37aa808f3796c8010f6b2bbad4c84d6af03e0bfac4acfe44d5959dae356cc"
-    sha256 cellar: :any_skip_relocation, sequoia:      "170733f16e3e4fb9575adf46dfeec47a47e1fee6e907a0daf74e7eaa07c3528a"
-    sha256 cellar: :any_skip_relocation, x86_64_linux: "4d382461f154441a15da0eb50b8576bfc0035282a43de899d00823c2a02ae9bd"
+    sha256 cellar: :any_skip_relocation, arm64_tahoe:  "e77c4c7842aba8097b983b92bef2e858db385478af9a385f2c61c90a258aee59"
+    sha256 cellar: :any_skip_relocation, sequoia:      "67f619edac262c69a5a174f7b6dbd03b017a2f6b472ce611e378fa78baf4b134"
+    sha256 cellar: :any_skip_relocation, x86_64_linux: "d074879ef652ba1313727265ed82c2c116481b37787b31259c8803dd417338a4"
   end
 
   depends_on "go" => :build
