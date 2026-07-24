@@ -13,9 +13,9 @@ cask "andrew-dictate" do
   app "Andrew Dictate.app"
 
   caveats <<~EOS
-    andrew dictate is currently unsigned. if you installed without
-    --no-quarantine, right-click the app in Finder and choose Open
-    on first launch.
+    andrew dictate is currently unsigned. clear the quarantine:
+      xattr -dr com.apple.quarantine "/Applications/Andrew Dictate.app"
+    or right-click the app in Finder and choose Open on first launch.
 
     on first run it downloads the ~450 MB parakeet v2 speech model.
   EOS
