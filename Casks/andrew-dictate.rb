@@ -7,7 +7,7 @@ cask "andrew-dictate" do
   desc "Fast, fully local dictation and voice command mode"
   homepage "https://github.com/jassuwu/andrew-dictate"
 
-  depends_on macos: :sonoma
+  depends_on macos: :tahoe
   depends_on arch: :arm64
 
   app "Andrew Dictate.app"
