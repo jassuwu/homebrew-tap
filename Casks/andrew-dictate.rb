@@ -1,6 +1,6 @@
 cask "andrew-dictate" do
-  version "0.9.3"
-  sha256 "d8cf587639eaa476f38d24a83db357d1bc564613af80082b3469797d9ea9effe"
+  version "0.9.4"
+  sha256 "64477d9ae10b4294bd438d34fea32a3cee1e5b8e268258140f17c224589afec7"
 
   url "https://github.com/jassuwu/andrew-dictate/releases/download/v#{version}/AndrewDictate-#{version}.dmg"
   name "Andrew Dictate"
