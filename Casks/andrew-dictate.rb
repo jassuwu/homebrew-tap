@@ -4,7 +4,7 @@ cask "andrew-dictate" do
 
   url "https://github.com/jassuwu/andrew-dictate/releases/download/v#{version}/AndrewDictate-#{version}.dmg"
   name "Andrew Dictate"
-  desc "Fast, fully local dictation and voice command mode"
+  desc "Dictation and meeting transcripts for talking to AI agents"
   homepage "https://github.com/jassuwu/andrew-dictate"
 
   depends_on macos: :tahoe
@@ -13,11 +13,12 @@ cask "andrew-dictate" do
   app "Andrew Dictate.app"
 
   caveats <<~EOS
-    andrew dictate is currently unsigned. clear the quarantine:
+    andrew dictate is not signed. clear the quarantine once, then open it:
       xattr -dr com.apple.quarantine "/Applications/Andrew Dictate.app"
-    or right-click the app in Finder and choose Open on first launch.
+      open "/Applications/Andrew Dictate.app"
 
-    on first run it downloads the ~450 MB parakeet v2 speech model.
+    setup downloads the speech models for the jobs you tick:
+    dictation is ~460 mb, meeting recording is ~2.9 gb.
   EOS
 
   zap trash: [
